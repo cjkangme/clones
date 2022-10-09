@@ -1,0 +1,5 @@
+.separator--vertical {
+  width: 0.5px;
+  height: 15px;
+  background-color: var(--icon-color-sidebar);
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>로그인 | 카카오톡</title>
+
+    <link rel="stylesheet" href="../css/style.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../assets/XEIcon/xeicon.min.css"
+    />
+  </head>
+  <body>
+    <!-- 제목표시줄 -->
+    <div class="title-bar">
+      <div class="title-bar__column">
+        <a class="title-bar__icon" href="#"><i class="xi-cog"></i></a>
+      </div>
+      <div class="title-bar__column separator--vertical"></div>
+      <div class="title-bar__column">
+        <a class="title-bar__icon" href="#"><i class="xi-minus"></i></a>
+        <a class="title-bar__icon" href="#"><i class="xi-close"></i></a>
+      </div>
+    </div>
+
+    <!-- 로그인 폼 & QR코드 로그인 -->
+    <span class="index__kakao-icon"></span>
+    <form class="login-form" action="">
+      <input
+        class="login-form__email"
+        type="text"
+        placeholder="카카오계정 (이메일 또는 전화번호)"
+      />
+      <input class="login-form__password" type="text" placeholder="비밀번호" />
+      <!-- To Do: js로 유효성검사 통과 못할경우 버튼 비활성화 -->
+      <button class="login-form__btn" type="submit">로그인</button>
+      <div class="separator"><span class="separator__text">또는</span></div>
+      <button class="login-form__btn login-form__btn--other">
+        <!-- ToDo : QR code Icon -->
+        <span class="login-form__text--other">QR코드 로그인</span>
+      </button>
+      <div class="remember-me">
+        <input class="login-form__checkbox" type="checkbox" />
+        <span class="remember-me__text">자동로그인</span>
+        <!-- ToDo : inpormation icon -->
+      </div>
+    </form>
+
+    <!-- forgot-user -->
+    <div class="forgot-user">
+      <span class="forgot-user__text">카카오계정 찾기</span>
+      <span class="forgot-user__text">비밀번호 재설정</span>
+    </div>
+  </body>
+</html>

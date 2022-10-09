@@ -1,0 +1,27 @@
+.title-bar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: sticky;
+  top: 0px;
+  right: 0px;
+  z-index: 1;
+  width: 100%;
+  padding: 8px 0;
+  background-color: var(--yellow);
+}
+
+.title-bar__icon {
+  margin-right: 10px;
+}
+
+.title-bar__column .title-bar__icon:first-child {
+  margin-left: 10px;
+}
+
+.title-bar__icon i {
+  color: var(--icon-color-sidebar);
+}
+.title-bar__icon i:hover {
+  color: #000;
+}

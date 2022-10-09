@@ -1,0 +1,19 @@
+:root {
+  /* colors */
+  --yellow: #fee500;
+  --skyblue: #bacee0;
+  --gray: #666666;
+  --lightgray: #ececed;
+  --lightgray-hover: #dfdfe0;
+  --icon-color: #423630;
+  --icon-color-sidebar: #acadb1;
+  --icon-color-sidebar-active: #343740;
+  --notification-color: #ff5442;
+
+  /* hover brightness */
+  --brighter: 1.2;
+  --darker: 0.8;
+
+  /* border */
+  --separator: 1px solid var(--lightgray-hover);
+}

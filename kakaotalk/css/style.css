@@ -1,0 +1,17 @@
+/* Normalize */
+@import 'normalize.css';
+
+/* Variables */
+@import 'variables.css';
+
+/* Components */
+@import 'components/title-bar.css';
+@import 'components/separator.css';
+
+/* Screen */
+@import 'screens/index.css';
+
+body {
+  width: 360px;
+  height: 590px;
+}

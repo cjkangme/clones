@@ -1,0 +1,6 @@
+body {
+  width: 360px;
+  height: 590px;
+  margin: auto;
+  background-color: var(--yellow);
+}

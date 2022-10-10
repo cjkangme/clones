@@ -1,19 +1,23 @@
 :root {
   /* colors */
   --yellow: #fee500;
+  --dark-yellow: #ecd500;
   --skyblue: #bacee0;
   --gray: #666666;
+  --white-hover: #e6e6e6;
   --lightgray: #ececed;
   --lightgray-hover: #dfdfe0;
   --icon-color: #423630;
+  --icon-color-hover: #66544a;
   --icon-color-sidebar: #acadb1;
   --icon-color-sidebar-active: #343740;
   --notification-color: #ff5442;
 
-  /* hover brightness */
-  --brighter: 1.2;
-  --darker: 0.8;
+  /* linear-gradient */
+  --brighter: 1.3;
+  --darker: 0.7;
 
   /* border */
-  --separator: 1px solid var(--lightgray-hover);
+  --separator: 1px solid #dfdfe0;
+  --form-border: 1px solid #ecd500;
 }

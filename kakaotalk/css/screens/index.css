@@ -1,6 +1,16 @@
 body {
-  width: 360px;
-  height: 590px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 450px;
+  height: 740px;
   margin: auto;
   background-color: var(--yellow);
+}
+
+.index__kakao-icon {
+  width: 160px;
+  height: 160px;
+  margin-top: 75px;
+  margin-bottom: 45px;
 }

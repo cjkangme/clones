@@ -7,7 +7,7 @@
   right: 0px;
   z-index: 1;
   width: 100%;
-  padding: 8px 0;
+  padding: 10px 0;
   background-color: var(--yellow);
 }
 
@@ -22,6 +22,6 @@
 .title-bar__icon i {
   color: var(--icon-color-sidebar);
 }
-.title-bar__icon i:hover {
+.title-bar__icon:hover i {
   color: #000;
 }

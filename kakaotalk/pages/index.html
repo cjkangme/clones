@@ -12,6 +12,11 @@
       type="text/css"
       href="../assets/XEIcon/xeicon.min.css"
     />
+
+    <script
+      src="https://kit.fontawesome.com/6682c71b2e.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <!-- 제목표시줄 -->
@@ -27,31 +32,47 @@
     </div>
 
     <!-- 로그인 폼 & QR코드 로그인 -->
-    <span class="index__kakao-icon"></span>
-    <form class="login-form" action="">
-      <input
-        class="login-form__email"
-        type="text"
-        placeholder="카카오계정 (이메일 또는 전화번호)"
-      />
-      <input class="login-form__password" type="text" placeholder="비밀번호" />
+    <img
+      class="index__kakao-icon"
+      src="../assets/svg/kakaotalk.svg"
+      alt="카카오톡 아이콘"
+    />
+    <form class="login-form" action="fridens.html" method="post">
+      <div class="login-form__box">
+        <input
+          class="login-form__id login-form__input"
+          type="text"
+          placeholder="카카오계정 (이메일 또는 전화번호)"
+        />
+        <input
+          class="login-form__password login-form__input"
+          type="text"
+          placeholder="비밀번호"
+        />
+      </div>
       <!-- To Do: js로 유효성검사 통과 못할경우 버튼 비활성화 -->
       <button class="login-form__btn" type="submit">로그인</button>
       <div class="separator"><span class="separator__text">또는</span></div>
       <button class="login-form__btn login-form__btn--other">
-        <!-- ToDo : QR code Icon -->
+        <i class="xi-qr-code xi-x"></i>
         <span class="login-form__text--other">QR코드 로그인</span>
       </button>
       <div class="remember-me">
-        <input class="login-form__checkbox" type="checkbox" />
+        <input
+          id="remember-me__checkbox"
+          class="login-form__checkbox"
+          type="checkbox"
+        />
+        <label for="remember-me__checkbox" class="remember-me__label"></label>
         <span class="remember-me__text">자동로그인</span>
-        <!-- ToDo : inpormation icon -->
+        <i class="xi-info-o remember-me__icon"></i>
       </div>
     </form>
 
     <!-- forgot-user -->
     <div class="forgot-user">
       <span class="forgot-user__text">카카오계정 찾기</span>
+      <div class="title-bar__column separator--vertical"></div>
       <span class="forgot-user__text">비밀번호 재설정</span>
     </div>
   </body>

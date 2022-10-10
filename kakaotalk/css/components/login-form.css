@@ -1,0 +1,110 @@
+body,
+main {
+  position: relative;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-form__box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: var(--form-border);
+}
+
+.login-form__input {
+  width: 300px;
+  height: 50px;
+  border: none;
+  text-indent: 0.5em;
+  outline: none;
+}
+
+.login-form__password {
+  border-top: var(--separator);
+}
+
+.login-form__btn {
+  width: 300px;
+  height: 50px;
+  margin-top: 5px;
+  padding: 1px;
+  border: var(--form-border);
+  background-color: var(--icon-color);
+  color: #fff;
+  box-sizing: content-box;
+}
+.login-form__btn:hover {
+  background-color: var(--icon-color-hover);
+}
+
+.login-form__btn--other {
+  background-color: #fff;
+  color: #000;
+}
+.login-form__btn--other:hover {
+  background-color: var(--white-hover);
+}
+
+/* remember-me */
+.remember-me {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-top: 15px;
+}
+
+.login-form__checkbox {
+  display: none;
+}
+
+input[type='checkbox'] + label {
+  position: relative;
+  width: 25px;
+  height: 25px;
+  border: var(--form-border);
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+input[type='checkbox']:checked + label::after {
+  content: '\f00c';
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  position: absolute;
+  top: 5px;
+  left: 4px;
+  width: 25px;
+  height: 25px;
+}
+
+.remember-me__text {
+  margin: 0 5px;
+  font-size: 0.9em;
+  color: var(--gray);
+}
+
+.remember-me__icon {
+  border-radius: 50%;
+  background-color: var(--dark-yellow);
+  color: var(--gray);
+  cursor: pointer;
+}
+
+/* forgot-user */
+.forgot-user {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 50px;
+  color: var(--gray);
+}
+
+.forgot-user__text {
+  margin: 0 10px;
+  font-size: 0.9em;
+}
